@@ -1,0 +1,11 @@
++signIn ()
++register ()
++
+
+Employee:
+-fullName :String
+-CIN :String primary key
+-isAdmin:boolean
+-password:
+-isRestricted:boolean
+
