@@ -62,5 +62,9 @@ exports.logout = async (req, res) => {
   }
 };
 exports.validatePresence = async (req, res) => {
-  //check qr code
+  try {
+    let employee = await Employee.findOne({});
+    //switch presence to true
+    //write to excel sheet
+  } catch (error) {}
 };

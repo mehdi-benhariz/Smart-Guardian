@@ -1,2 +1,4 @@
 server/config/.env
 server/logs/
+server/node_modules/
+server/public/
