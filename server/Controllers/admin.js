@@ -23,12 +23,12 @@ exports.addEmployee = async (req, res) => {
   const { CIN } = req.body;
 
   try {
-    const employee = new Employee(req.body);
-    await employee.save();
+    // const employee = new Employee(req.body);
+    // await employee.save();
     const result = await addPresence({ CIN, date: date.toISOString() });
     res.status(201).send({
       message: "Employee added successfully",
-      employee,
+      // employee,
     });
   } catch (e) {
     res.status(500).send(e.message);

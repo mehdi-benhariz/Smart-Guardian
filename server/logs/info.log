@@ -235,3 +235,50 @@
 {"level":"info","message":"mongoose is connected "}
 {"level":"info","message":"Server is listening on port 3000 on development mode"}
 {"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"code":"ENOENT","errno":-2,"level":"error","message":"ENOENT: no such file or directory, open 'public/qrcodes/qrcode.png' ENOENT: no such file or directory, open 'public/qrcodes/qrcode.png'","path":"public/qrcodes/qrcode.png","stack":"Error: ENOENT: no such file or directory, open 'public/qrcodes/qrcode.png'","syscall":"open"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"mongoose is connected "}

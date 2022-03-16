@@ -13,3 +13,16 @@ exports.decodeImg = (data, name) => {
   //data:image/
   s.pipe(fs.createWriteStream(`public/qrcodes/${name}.${ext}`));
 };
+
+exports.generateQRCode = (data, name) => {
+  let QRCode = require("qrcode");
+  QRCode.toFile(`public/${name}.png`, data, {
+    color: {
+      dark: "#000000",
+      light: "#ffffff",
+    },
+    width: 500,
+    height: 500,
+    margin: 0,
+  });
+};

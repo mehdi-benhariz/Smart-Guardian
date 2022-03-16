@@ -43,14 +43,6 @@ exports.getPresenceByEmployee = async (cin) => {
 };
 
 exports.addPresence = async (data) => {
-  const { date, cin } = data;
-  const presence = await this.getPresenceByEmployee(cin);
-  let lastLine = new presence[presence.length - 1]();
-  lastLine[date] = data.presence;
-  const newPresence = { ...presence, [date]: data.presence };
-  return newPresence;
-};
-exports.addPresence = async (data) => {
   const { date, CIN } = data;
   const file = reader.readFile(
     path.join(__dirname, "../assets/attendency.xlsx")
@@ -61,13 +53,13 @@ exports.addPresence = async (data) => {
   const l = presence.length;
   if (presence[l - 1].date === date) presence[l - 1][CIN] = data.presence;
   else presence.push({ [CIN]: data.presence || false, date });
-
+  console.log(presence);
   const ws = reader.utils.json_to_sheet(presence);
 
-  reader.utils.book_append_sheet(file, ws);
+  reader.utils.book_append_sheet(file, ws, "attendancy");
 
   // Writing to our file
-  reader.writeFile(file, ".attendency.xlsx");
+  reader.writeFile(file, "assets/attendency.xlsx");
 
   return presence;
 };

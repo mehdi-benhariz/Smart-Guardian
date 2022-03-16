@@ -10,13 +10,13 @@ require("./loaders/config")(app);
 require("./loaders/routes")(app);
 
 // require("./loaders/validation")();
-var qr = require("qr-image");
-const { decodeImg } = require("./utils/images");
-
+const { generateQRCode } = require("./utils/images");
 app.get("/", async (req, res) => {
+  generateQRCode("Hello World", "qrcode");
+
   // getPresence();
   res.send("ok");
-  console.log(await getPresenceByEmployee("1111111"));
+  // console.log(await getPresenceByEmployee("1111111"));
 });
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

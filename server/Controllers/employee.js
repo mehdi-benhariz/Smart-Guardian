@@ -61,6 +61,21 @@ exports.logout = async (req, res) => {
     res.status(500).send(e.message);
   }
 };
+exports.getQRCode = async (req, res) => {
+  try {
+    const employee = await Employee.findOne({
+      CIN: req.params.CIN,
+    });
+    if (!employee)
+      return res.status(404).send({
+        message: "Employee not found with CIN " + req.params.CIN,
+      });
+    const qrCode = `${employee.CIN}`;
+    res.status(200).send({ qrCode });
+  } catch (e) {
+    res.status(500).send(e.message);
+  }
+};
 exports.validatePresence = async (req, res) => {
   try {
     let employee = await Employee.findOne({});
