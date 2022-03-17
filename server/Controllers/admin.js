@@ -1,5 +1,6 @@
 const Employee = require("../models/Employee");
 const ObjectId = require("mongodb").ObjectId;
+const { EmployeeValidator } = require("../loaders/validation");
 const {
   getPresenceByDate,
   getPresenceByEmployee,
@@ -14,6 +15,7 @@ const checkData = async (req, res, next) => {
 };
 
 exports.addEmployee = async (req, res) => {
+  console.log(EmployeeValidator(req.body));
   const errors = await checkData(req, res);
   if (errors.length > 0)
     return res.status(400).json({
@@ -111,12 +113,8 @@ exports.getEmployeePresence = async (req, res) => {
         message: "Employee not found with id " + req.params.id,
       });
     }
-    console.log("break 1");
-    console.log(employee.CIN);
     const presence = await getPresenceByEmployee(employee.CIN);
-    console.log("break 1");
 
-    console.log({ presence });
     res.status(200).send({
       message: "Presence fetched successfully",
       presence,
@@ -137,5 +135,42 @@ exports.getEmployeesPresence = async (req, res) => {
     });
   } catch (e) {
     res.status(500).send(e);
+  }
+};
+
+exports.downloadEmployeesPresence = async (req, res) => {
+  console.log("downloadEmployeesPresence");
+  try {
+    const path = `${__dirname}/../assets/attendency.xlsx`;
+
+    require("fs").readFile(path, function (err, content) {
+      if (err) {
+        res.writeHead(400, { "Content-type": "text/html" });
+        console.log(err);
+        res.end("No such file");
+      } else {
+        res.setHeader(
+          "Content-disposition",
+          `attachment; filename=attendency.xlsx`
+        );
+        res.end(content);
+      }
+    });
+    // const filePath = require("fs").createWriteStream(path);
+    // res.pipe(filePath);
+    // filePath.on("finish", () => {
+    //   filePath.close();
+    //   console.log("Download Completed");
+    // });
+    // const readStream = require("fs").createWriteStream(path);
+    // readStream.pipe(res).on("finish", () => {
+    //   readStream.close();
+    //   console.log("Download Completed");
+    //   res.status(200).send({
+    //     message: "Presence fetched successfully",
+    //   });
+    // });
+  } catch (e) {
+    res.status(500).send(e.message);
   }
 };

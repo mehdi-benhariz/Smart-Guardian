@@ -17,6 +17,7 @@ const EmployeeSchema = new Schema({
   CIN: {
     type: String,
     required: true,
+    length: [8, 8],
     unique: true,
   },
   isAdmin: {

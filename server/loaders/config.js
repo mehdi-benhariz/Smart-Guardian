@@ -9,7 +9,7 @@ const path = require("path");
 const { errorHandler } = require("../middleware/errorHandler");
 require("express-async-errors");
 module.exports = (app) => {
-  app.use("/static", express.static(path.join(__dirname, "..", "public")));
+  // app.use("/", express.static(path.join(__dirname, "..", "public")));
   //   app.use(errorHandler);
   app.use(
     express.json({
@@ -41,4 +41,5 @@ module.exports = (app) => {
     );
     next();
   });
+  // app.use(express.static(__dirname + "../public"));
 };
