@@ -1,4 +1,8 @@
 const Employee = require("../models/Employee");
+const safeCompare = require("safe-compare");
+const { generateQRCode } = require("../utils/images");
+const { getUserByToken } = require("../utils/auth");
+const { redisClient } = require("../loaders/database");
 
 const checkLoginData = async (req, res, next) => {
   let errors = [];
@@ -6,7 +10,8 @@ const checkLoginData = async (req, res, next) => {
   if (!req.body.password) errors.push({ msg: "Please enter password" });
   return errors;
 };
-
+//params : CIN ,password
+//
 exports.login = async (req, res) => {
   const errors = await checkLoginData(req, res);
   if (errors.length > 0)
@@ -50,7 +55,7 @@ exports.login = async (req, res) => {
     res.status(500).send(e.message);
   }
 };
-
+//
 exports.logout = async (req, res) => {
   try {
     res.status(200).clearCookie("token").json({
@@ -61,25 +66,53 @@ exports.logout = async (req, res) => {
     res.status(500).send(e.message);
   }
 };
+//
 exports.getQRCode = async (req, res) => {
   try {
-    const employee = await Employee.findOne({
-      CIN: req.params.CIN,
-    });
+    const employee = await getUserByToken(req.cookies?.token);
+
     if (!employee)
       return res.status(404).send({
-        message: "Employee not found with CIN " + req.params.CIN,
+        message: "Employee not found with CIN " + req.body.CIN,
       });
-    const qrCode = `${employee.CIN}`;
-    res.status(200).send({ qrCode });
+    //*generate a token
+    const token = await require("crypto").randomBytes(48).toString("hex");
+    const qrCode = JSON.stringify({
+      CIN: employee.CIN,
+      token,
+    });
+    console.log(qrCode);
+    generateQRCode(qrCode, employee.CIN.toString());
+    //*store the data in cache
+    const chacheRes = await redisClient.set(employee.CIN, token);
+    console.log(chacheRes);
+    res
+      .status(200)
+      .send({ success: true, message: "qrcode created successfully" });
   } catch (e) {
     res.status(500).send(e.message);
   }
 };
-exports.validatePresence = async (req, res) => {
+//param: CIN , token
+exports.validateQRCode = async (req, res) => {
   try {
-    let employee = await Employee.findOne({});
-    //switch presence to true
-    //write to excel sheet
-  } catch (error) {}
+    const { CIN, token } = req.body;
+    if (!CIN || !token)
+      return res.status(400).send({ message: `CIN or token are not valid` });
+
+    const employee = await Employee.findOne({ CIN });
+    if (!employee)
+      return res.status(404).send({
+        message: `Employee not found with CIN: ${CIN}`,
+      });
+    const realToken = await redisClient.get(CIN);
+    //
+    if (safeCompare(token, realToken)) {
+      redisClient.del(CIN);
+      return res.status(200).json({ success: true, message: "welcome" });
+    }
+    return res.status(300).json({ success: false, message: "wrong code!" });
+  } catch (e) {
+    res.status(500).send(e.message);
+  }
 };

@@ -54,7 +54,8 @@ exports.getAllEmployees = async (req, res) => {
 exports.deleteEmployee = async (req, res) => {
   //verify id
   const id = req.params.id;
-  if (!ObjectId.isValid(id)) return res.status(404).send("Invalid id");
+  if (!ObjectId.isValid(id))
+    return res.status(404).send({ error: "Invalid id" });
   try {
     const employee = await Employee.findOne({
       id,
@@ -74,7 +75,7 @@ exports.deleteEmployee = async (req, res) => {
       message: "Employee deleted successfully",
     });
   } catch (e) {
-    res.status(500).send(e);
+    res.status(500).send({ error: e });
   }
 };
 

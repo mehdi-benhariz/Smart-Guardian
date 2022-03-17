@@ -5,17 +5,13 @@ require("dotenv").config({ path: "./config/.env" });
 const { getPresence, getPresenceByEmployee } = require("./utils/data");
 const app = express();
 require("./loaders/logging");
-require("./loaders/database")();
+require("./loaders/database").init();
 require("./loaders/config")(app);
 require("./loaders/routes")(app);
 
 // require("./loaders/validation")();
 const { generateQRCode } = require("./utils/images");
 app.get("/", async (req, res) => {
-  generateQRCode("Hello World", "qrcode");
-
-  // getPresence();
-  res.send("ok");
   // console.log(await getPresenceByEmployee("1111111"));
 });
 const PORT = process.env.PORT || 3000;

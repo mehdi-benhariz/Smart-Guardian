@@ -16,7 +16,7 @@ exports.decodeImg = (data, name) => {
 
 exports.generateQRCode = (data, name) => {
   let QRCode = require("qrcode");
-  QRCode.toFile(`public/${name}.png`, data, {
+  QRCode.toFile(`public/qrcodes/${name}.png`, data, {
     color: {
       dark: "#000000",
       light: "#ffffff",
