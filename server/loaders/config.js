@@ -7,8 +7,11 @@ const morgan = require("morgan");
 const cookieParser = require("cookie-parser");
 const path = require("path");
 const { errorHandler } = require("../middleware/errorHandler");
+const { checkEmployee } = require("../middleware/auth");
 require("express-async-errors");
 module.exports = (app) => {
+  //add middleware to static files
+  app.use("/", checkEmployee);
   app.use("/", express.static(path.join(__dirname, "public")));
 
   //   app.use(errorHandler);
@@ -40,6 +43,10 @@ module.exports = (app) => {
       "Access-Control-Allow-Headers",
       "Origin, X-Requested-With, Content-Type, Accept"
     );
+    // Switch off the default 'X-Powered-By: Express' header
+    app.disable("x-powered-by");
+    // OR set your own header here
+    res.setHeader("X-Powered-By", "Mehdi App v0.0.1");
     next();
   });
   // app.use(express.static(__dirname + "../public"));

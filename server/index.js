@@ -4,6 +4,7 @@ const logger = require("./loaders/logging");
 require("dotenv").config({ path: "./config/.env" });
 const app = express();
 const path = require("path");
+const { getPresence } = require("./utils/data");
 app.use("/", express.static(path.join(__dirname, "public"))); //  "public" off of current is root
 
 // app.use(express.static("public"));

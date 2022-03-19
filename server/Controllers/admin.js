@@ -139,7 +139,6 @@ exports.getEmployeesPresence = async (req, res) => {
 };
 
 exports.downloadEmployeesPresence = async (req, res) => {
-  console.log("downloadEmployeesPresence");
   try {
     const path = `${__dirname}/../assets/attendency.xlsx`;
 
@@ -156,20 +155,6 @@ exports.downloadEmployeesPresence = async (req, res) => {
         res.end(content);
       }
     });
-    // const filePath = require("fs").createWriteStream(path);
-    // res.pipe(filePath);
-    // filePath.on("finish", () => {
-    //   filePath.close();
-    //   console.log("Download Completed");
-    // });
-    // const readStream = require("fs").createWriteStream(path);
-    // readStream.pipe(res).on("finish", () => {
-    //   readStream.close();
-    //   console.log("Download Completed");
-    //   res.status(200).send({
-    //     message: "Presence fetched successfully",
-    //   });
-    // });
   } catch (e) {
     res.status(500).send(e.message);
   }

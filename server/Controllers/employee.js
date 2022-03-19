@@ -108,10 +108,12 @@ exports.validateQRCode = async (req, res) => {
     const realToken = await redisClient.get(CIN);
     //
     if (safeCompare(token, realToken)) {
+      //todo change the date format
+      addPresence({ CIN, date: new Date() });
       redisClient.del(CIN);
       return res.status(200).json({ success: true, message: "welcome" });
     }
-    return res.status(300).json({ success: false, message: "wrong code!" });
+    return res.status(300).json({ success: false, message: "invalide code!" });
   } catch (e) {
     res.status(500).send(e.message);
   }
