@@ -14,7 +14,10 @@ require("./loaders/config")(app);
 require("./loaders/routes")(app);
 
 // require("./loaders/validation")();
-
+app.get("/test", async (req, res) => {
+  const data = await getPresence();
+  res.send(data);
+});
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   logger.info(

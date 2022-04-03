@@ -1,8 +1,8 @@
 // Requiring the module
-const reader = require("xlsx");
+const xlsx = require("xlsx");
 const fs = require("fs");
 const path = require("path");
-const file = reader.readFile(path.join(__dirname, "../assets/attendency.xlsx"));
+const file = xlsx.readFile(path.join(__dirname, "../assets/attendancy.xlsx"));
 
 const excelDateToJSDate = (excelDate) => {
   var date = new Date(Math.round((excelDate - (25567 + 1)) * 86400 * 1000));
@@ -10,17 +10,21 @@ const excelDateToJSDate = (excelDate) => {
   return converted_date;
 };
 
-// const file = reader.readFile("../assets/attendency.xlsx");
+// const file = xlsx.readFile("../assets/attendency.xlsx");
 exports.getPresence = async () => {
   let data = [];
-
+  // const file = xlsx.readFile(path.join(__dirname, "../assets/attendency.xlsx"));
   const sheets = file.SheetNames;
-
+  const ws = file.Sheets[sheets[0]];
+  const dataFromFile = xlsx.utils.sheet_to_json(ws);
+  console.log(dataFromFile);
   for (let i = 0; i < sheets.length; i++) {
-    const temp = reader.utils.sheet_to_json(file.Sheets[file.SheetNames[i]]);
+    const temp = xlsx.utils.sheet_to_json(file.Sheets[file.SheetNames[i]]);
     temp.forEach((res) => {
       // res.date = excelDateToJSDate(res.date);
-      data.push({ ...res, date: excelDateToJSDate(res["attendance/CIN"]) });
+      // console.log(res["Date-CIN"]);
+      // console.log(res);
+      data.push({ ...res, date: excelDateToJSDate(res["Date-CIN"]) });
     });
   }
   return data;
@@ -44,9 +48,7 @@ exports.getPresenceByEmployee = async (cin) => {
 
 exports.addPresence = async (data) => {
   const { date, CIN } = data;
-  const file = reader.readFile(
-    path.join(__dirname, "../assets/attendency.xlsx")
-  );
+  const file = xlsx.readFile(path.join(__dirname, "../assets/attendency.xlsx"));
 
   const presence = await this.getPresence();
   //create new presence list
@@ -54,12 +56,12 @@ exports.addPresence = async (data) => {
   if (presence[l - 1].date === date) presence[l - 1][CIN] = data.presence;
   else presence.push({ [CIN]: data.presence || false, date });
   console.log(presence);
-  const ws = reader.utils.json_to_sheet(presence);
+  const ws = xlsx.utils.json_to_sheet(presence);
 
-  reader.utils.book_append_sheet(file, ws, "attendancy");
+  xlsx.utils.book_append_sheet(file, ws, "attendancy");
 
   // Writing to our file
-  reader.writeFile(file, "assets/attendency.xlsx");
+  xlsx.writeFile(file, "assets/attendency.xlsx");
 
   return presence;
 };

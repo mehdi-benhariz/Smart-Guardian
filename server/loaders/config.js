@@ -11,7 +11,7 @@ const { checkEmployee } = require("../middleware/auth");
 require("express-async-errors");
 module.exports = (app) => {
   //add middleware to static files
-  app.use("/", checkEmployee);
+  // app.use("/", checkEmployee);
   app.use("/", express.static(path.join(__dirname, "public")));
 
   //   app.use(errorHandler);
