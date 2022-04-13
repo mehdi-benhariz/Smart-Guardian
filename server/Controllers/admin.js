@@ -21,13 +21,13 @@ exports.addEmployee = async (req, res) => {
     return res.status(400).json({
       errors,
     });
-  const date = new Date();
   const { CIN } = req.body;
 
   try {
-    // const employee = new Employee(req.body);
-    // await employee.save();
-    const result = await addPresence({ CIN, date: date.toISOString() });
+    const employee = new Employee(req.body);
+    await employee.save();
+    const result = await addPresence(new Date(), CIN);
+
     res.status(201).send({
       message: "Employee added successfully",
       // employee,
@@ -140,7 +140,7 @@ exports.getEmployeesPresence = async (req, res) => {
 
 exports.downloadEmployeesPresence = async (req, res) => {
   try {
-    const path = `${__dirname}/../assets/attendency.xlsx`;
+    const path = `${__dirname}/../assets/test.csv`;
 
     require("fs").readFile(path, function (err, content) {
       if (err) {
@@ -148,10 +148,7 @@ exports.downloadEmployeesPresence = async (req, res) => {
         console.log(err);
         res.end("No such file");
       } else {
-        res.setHeader(
-          "Content-disposition",
-          `attachment; filename=attendency.xlsx`
-        );
+        res.setHeader("Content-disposition", `attachment; filename=test.csv`);
         res.end(content);
       }
     });

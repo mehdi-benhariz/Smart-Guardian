@@ -682,3 +682,400 @@
 {"level":"info","message":"Server is listening on port 3000 on development mode"}
 {"level":"info","message":"redis is connected"}
 {"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"code":"ENOENT","errno":-2,"level":"error","message":"ENOENT: no such file or directory, open '/home/mehdi/Documents/study/sem2/SEE/project/server/utils/test.csv' ENOENT: no such file or directory, open '/home/mehdi/Documents/study/sem2/SEE/project/server/utils/test.csv'","path":"/home/mehdi/Documents/study/sem2/SEE/project/server/utils/test.csv","stack":"Error: ENOENT: no such file or directory, open '/home/mehdi/Documents/study/sem2/SEE/project/server/utils/test.csv'","syscall":"open"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"error","message":"getPresence is not defined getPresence is not defined","stack":"ReferenceError: getPresence is not defined\n    at exports.insertUser (/home/mehdi/Documents/study/sem2/SEE/project/server/utils/data.js:68:3)\n    at /home/mehdi/Documents/study/sem2/SEE/project/server/index.js:20:3\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'getPresence') Cannot read properties of undefined (reading 'getPresence')","stack":"TypeError: Cannot read properties of undefined (reading 'getPresence')\n    at exports.insertUser (/home/mehdi/Documents/study/sem2/SEE/project/server/utils/data.js:68:26)\n    at /home/mehdi/Documents/study/sem2/SEE/project/server/index.js:20:3\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"error","message":"addDays is not defined addDays is not defined","stack":"ReferenceError: addDays is not defined\n    at exports.insertUser (/home/mehdi/Documents/study/sem2/SEE/project/server/utils/data.js:75:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"error","message":"stream.write(...).pipe is not a function stream.write(...).pipe is not a function","stack":"TypeError: stream.write(...).pipe is not a function\n    at exports.insertUser (/home/mehdi/Documents/study/sem2/SEE/project/server/utils/data.js:96:29)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"error","message":"rows.reduce is not a function rows.reduce is not a function","stack":"TypeError: rows.reduce is not a function\n    at Object.exports.write (/home/mehdi/Documents/study/sem2/SEE/project/server/node_modules/@fast-csv/format/build/src/index.js:42:10)\n    at exports.insertUser (/home/mehdi/Documents/study/sem2/SEE/project/server/utils/data.js:96:23)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"error","message":"parse.write is not a function parse.write is not a function","stack":"TypeError: parse.write is not a function\n    at exports.insertUser (/home/mehdi/Documents/study/sem2/SEE/project/server/utils/data.js:96:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"code":"ERR_STREAM_CANNOT_PIPE","level":"error","message":"Cannot pipe, not readable Cannot pipe, not readable","stack":"Error [ERR_STREAM_CANNOT_PIPE]: Cannot pipe, not readable\n    at new NodeError (node:internal/errors:371:5)\n    at WriteStream.Writable.pipe (node:internal/streams/writable:280:24)\n    at exports.insertUser (/home/mehdi/Documents/study/sem2/SEE/project/server/utils/data.js:96:10)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"error","message":"Cannot access 'stream' before initialization Cannot access 'stream' before initialization","stack":"ReferenceError: Cannot access 'stream' before initialization\n    at exports.insertUser (/home/mehdi/Documents/study/sem2/SEE/project/server/utils/data.js:89:17)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"error","message":"dest.on is not a function dest.on is not a function","stack":"TypeError: dest.on is not a function\n    at CsvFormatterStream.Readable.pipe (node:internal/streams/readable:680:8)\n    at exports.insertUser (/home/mehdi/Documents/study/sem2/SEE/project/server/utils/data.js:95:29)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"code":"ERR_INVALID_ARG_TYPE","level":"error","message":"The \"chunk\" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array The \"chunk\" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array","stack":"TypeError [ERR_INVALID_ARG_TYPE]: The \"chunk\" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array\n    at new NodeError (node:internal/errors:371:5)\n    at _write (node:internal/streams/writable:312:13)\n    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n    at exports.insertUser (/home/mehdi/Documents/study/sem2/SEE/project/server/utils/data.js:95:50)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"code":"ERR_INVALID_ARG_TYPE","level":"error","message":"The \"chunk\" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array The \"chunk\" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array","stack":"TypeError [ERR_INVALID_ARG_TYPE]: The \"chunk\" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array\n    at new NodeError (node:internal/errors:371:5)\n    at _write (node:internal/streams/writable:312:13)\n    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n    at exports.insertUser (/home/mehdi/Documents/study/sem2/SEE/project/server/utils/data.js:95:50)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"code":"ERR_INVALID_ARG_TYPE","level":"error","message":"The \"chunk\" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array The \"chunk\" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array","stack":"TypeError [ERR_INVALID_ARG_TYPE]: The \"chunk\" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array\n    at new NodeError (node:internal/errors:371:5)\n    at _write (node:internal/streams/writable:312:13)\n    at WriteStream.Writable.write (node:internal/streams/writable:334:10)\n    at exports.insertUser (/home/mehdi/Documents/study/sem2/SEE/project/server/utils/data.js:96:50)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"error","message":"rows.reduce is not a function rows.reduce is not a function","stack":"TypeError: rows.reduce is not a function\n    at exports.write (/home/mehdi/Documents/study/sem2/SEE/project/server/node_modules/@fast-csv/format/build/src/index.js:42:10)\n    at exports.insertUser (/home/mehdi/Documents/study/sem2/SEE/project/server/utils/data.js:94:3)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
+{"level":"info","message":"Server is listening on port 3000 on development mode"}
+{"level":"info","message":"redis is connected"}
+{"level":"info","message":"mongoose is connected "}
