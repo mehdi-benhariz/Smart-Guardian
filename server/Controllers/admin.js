@@ -114,10 +114,17 @@ exports.getEmployeePresence = async (req, res) => {
       });
     }
     const presence = await getPresenceByEmployee(employee.CIN);
+    console.log(presence);
+    let absence = 0;
+    for (var property in presence) {
+      console.log(presence[property]);
+      if (JSON.parse(presence[property]) === "false") absence++;
+    }
 
     res.status(200).send({
       message: "Presence fetched successfully",
       presence,
+      absence,
     });
   } catch (e) {
     res.status(500).send(e);

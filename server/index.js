@@ -14,12 +14,8 @@ require("./loaders/config")(app);
 require("./loaders/routes")(app);
 
 // require("./loaders/validation")();
-app.get("/test", async (req, res) => {
-  const data = await getPresence();
-  console.log(data);
-  // addPresence(new Date(), "4444");
-  insertUser("4444");
-  res.status(200).send("done");
+app.get("/", async (req, res) => {
+  res.send("welcome mehdi , your app is up and running   !");
 });
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

@@ -2,6 +2,7 @@ var fs = require("fs");
 const path = require("path");
 const { parse } = require("fast-csv");
 const { format, write } = require("@fast-csv/format");
+const { Console } = require("console");
 
 //!helper functions
 function ExcelDateToJSDate(serial) {
@@ -148,5 +149,5 @@ exports.getPresenceByDate = async (start, end) => {
 exports.getPresenceByEmployee = async (cin) => {
   let data = [];
   data = await this.getPresence();
-  return data.filter((res) => res.XXXX == cin);
+  return data.find((res) => res["XXXX"] === cin);
 };

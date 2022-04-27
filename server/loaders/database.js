@@ -2,7 +2,14 @@ const mongoose = require("mongoose");
 const logger = require("./logging");
 const redis = require("redis");
 const debug = require("debug")("app:loaders");
-var client = redis.createClient();
+const enviroment = process.env.NODE_ENV || "development";
+const redisConfig = {
+  host:
+    enviroment == "production" ? process.env.REDIS_ENDPOINT_URI : "localhost",
+  port: 6379,
+  password: enviroment == "production" ? process.env.REDIS_PASSWORD : "",
+};
+var client = redis.createClient(redisConfig);
 module.exports = {
   init: function () {
     const dbURI = process.env.MONGO_URI;
