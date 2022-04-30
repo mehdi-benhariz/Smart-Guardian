@@ -1,5 +1,5 @@
 
-# Smart Guadian
+# Smart Guardian
 
 This project is a mobile/web app for employees and admins to track presence.
 
