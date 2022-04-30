@@ -1,6 +1,16 @@
 const { getUserByToken } = require("../utils/auth");
 exports.checkEmployee = async (req, res, next) => {
-  const employee = await getUserByToken(req.cookies?.token);
+  let token;
+  if (
+    req.headers.authorization &&
+    req.headers.authorization.startsWith("Bearer")
+  )
+    // Set token from Bearer token in header
+    token = req.headers.authorization.split(" ")[1];
+  // Set token from cookie
+  else if (req.cookies.token) token = req.cookies.token;
+
+  const employee = await getUserByToken(token);
   if (!employee) {
     return res.status(401).json({
       message: "Access denied. You are not authorized to perform this action.",

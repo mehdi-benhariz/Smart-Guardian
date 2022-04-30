@@ -3,13 +3,11 @@ const logger = require("./logging");
 const redis = require("redis");
 const debug = require("debug")("app:loaders");
 const enviroment = process.env.NODE_ENV || "development";
-const redisConfig = {
-  host:
-    enviroment == "production" ? process.env.REDIS_ENDPOINT_URI : "localhost",
-  port: 6379,
-  password: enviroment == "production" ? process.env.REDIS_PASSWORD : "",
-};
-var client = redis.createClient(redisConfig);
+
+var client = redis.createClient({
+  host: process.env.REDIS_ENDPOINT_URI,
+  password: process.env.REDIS_PASSWORD,
+});
 module.exports = {
   init: function () {
     const dbURI = process.env.MONGO_URI;
