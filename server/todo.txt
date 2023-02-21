@@ -1,0 +1,24 @@
++signIn ()
++register ()
++
+
+Employee:
+-fullName :String
+-CIN :String primary key
+-isAdmin:boolean
+-password:
+-isRestricted:boolean
+
+1/ qr sent from backend.
+2/ validate from raspberry after scaning it.
+3/ send to backend to change presence.
+
+
+
+
+
+
+
+
+
+
